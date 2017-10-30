@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="choose_page.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript">
+    	sr = new File.OpenText('x.txt');
+    	var input = "";
+	        input = sr.ReadLine();
+	        alert(input);
+	        if (input == "1")
+	        {
+	        	document.getElementById('checkb').checked = true;
+	        }
+	        else
+	        {
+	        	document.getElementById('checkb').checked = false;
+	        }
+    	sr.Close();
+    </script>
+  </head>
+<body>
+<div>
+  	<p align="center" style="margin: 0; padding: 0; font-family: 'Raleway', sans-serif; color: white; background-color: #a49fa5; font-size: 40px;">Eligere</p>
+  	<div id=main style="text-align: center;">
+  		<br><br>
+  		<label class="switch">
+			<input name="checkb" type="checkbox" onclick="$(this).attr('value', this.checked ? 1 : 0)">
+			<span class="slider round"></span>
+		</label>
+	</div>
+</div>
+</body>
+</html>
